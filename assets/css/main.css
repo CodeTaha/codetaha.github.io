@@ -2162,7 +2162,8 @@
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				/*background-image: url("../../images/banner.jpg");*/
+				background-image: url("../../images/img/cover.png");
 			}
 
 			#main > section.two {
@@ -2536,3 +2537,29 @@
 				}
 
 	}
+.person {
+    text-align: center;
+}
+.person .person-avatar {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.person .person-avatar img {
+    width: 7em;
+    height: 7em;
+}
+.person .person-content {
+    margin-left: -40px;
+    margin-right: -40px;
+}
+.person .person-content .person-title {
+￼    font-size: 22px;
+￼    font-weight: 500;
+	 color: #EAE4E4;	
+￼    text-transform: uppercase;
+}
+.person .person-content .person-subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    color:#EC5858;
+}

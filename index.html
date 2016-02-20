@@ -6,12 +6,13 @@
 -->
 <html>
 	<head>
-		<title>Prologue by HTML5 UP</title>
+		<title>Taha Kachwala - Full Stack Developer | Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		
+		<link rel="stylesheet" href="javascripts/vendor/bootstrap/dist/css/bootstrap.css"/>	
+		<link rel="stylesheet" href="assets/css/main.css" />	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
 	<body>
@@ -20,13 +21,23 @@
 			<div id="header">
 
 				<div class="top">
-
+					<div class="person">
+						<div class="person-avatar">
+	            			<img src="images/img/profile.png" alt="" class="avatar img-circle">
+	          			</div>
+	          			<div class="person-content">
+	            			<h1 class="person-title">Taha Kachwala</h1>
+	            			<h2 class="person-subtitle">Full-Stack Developer & Data Visualization</h2>
+	          			</div>
+	          		</div>
 					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-							<h1 id="title">Jane Doe</h1>
-							<p>Hyperspace Engineer</p>
-						</div>
+						<!--<div id="logo">
+							
+								<span class="image avatar48"><img src="images/img/profile.jpg" alt="" /></span>
+							
+							<h1 id="title">Taha Kachwala</h1>
+							<p>Full-Stack Developer and Data Visualization</p>
+						</div>-->
 
 					<!-- Nav -->
 						<nav id="nav">
@@ -57,11 +68,12 @@
 
 					<!-- Social Icons -->
 						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://fi.linkedin.com/in/taha-kachwala-7a770a4b" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/CodeTaha" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+							<li><a href="https://www.facebook.com/taha.kachwala" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+							
+							<li><a href="skype:taha.kachwala?call" class="icon fa fa-skype" target="_blank"><span class="label">Phone</span></a></li>
+							<li><a href="mailto:taha.kachwala@aalto.fi" class="icon fa-envelope" target="_blank"><span class="label">Email</span></a></li>
 						</ul>
 
 				</div>
@@ -76,14 +88,13 @@
 						<div class="container">
 
 							<header>
-								<h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
-								site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
-								<p>Ligula scelerisque justo sem accumsan diam quis<br />
-								vitae natoque dictum sollicitudin elementum.</p>
+								<h2 class="alt">Hello, I'm <strong>Taha Kachwala</strong>, and I specialize in Full-Stack Web Application development and Data Visualization.</h2>
+								<br />
+								
 							</header>
 
 							<footer>
-								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+								<a href="#portfolio" class="button scrolly">Portfolio</a>
 							</footer>
 
 						</div>
@@ -97,17 +108,14 @@
 								<h2>Portfolio</h2>
 							</header>
 
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p>
+							<p>I am passionate about Web development and everything that goes along with it. I have past experience and have delivered projects using <strong>Java</strong>(SpringMVC), <strong>Node</strong>(Express, Mongo), <strong>Python</strong>(Django), <strong>JavaScript</strong>(Backbone.js, Angular) and <strong>D3</strong></p>
 
 							<div class="row">
 								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<article class="item" data-toggle="modal" data-target="#myModal" data-port_id="ConstellationAtlas" onclick="fillModal(this)">
+										<a href="#" class="image fit"><img src="images/img/ConstellationAtlas.png" alt="" /></a>
 										<header>
-											<h3>Ipsum Feugiat</h3>
+											<h3>Constellation Atlas</h3>
 										</header>
 									</article>
 									<article class="item">
@@ -158,14 +166,9 @@
 								<h2>About Me</h2>
 							</header>
 
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+							<a href="#" class="image featured"><img src="images/img/3dcityhackathon-crop.jpg" alt="" /></a>
 
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-							ornare iaculis.</p>
+							<p>I am a graduate student at EIT Digital in Digital Media Technology track. As a double degree student, I have completed my first year of Master's at TU Delft, Netherlands and currently pursuing my final year from Aalto University, Finland. My major is in Hypermedia Technologies and minor in Innovation and Entrepreneurship.</p>
 
 						</div>
 					</section>
@@ -200,8 +203,30 @@
 					</section>
 
 			</div>
-
-		<!-- Footer -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		      <div class="modal-dialog" role="document">
+		        <div class="modal-content">
+		          <div class="modal-header">
+		            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		            <h2 class="modal-title" id="myModalLabel">Modal title</h2>
+		          </div>
+		          <div class="modal-body" id="myModalBody">
+		            <div class="thumbnail">
+		              <img src="images/img/ConstellationAtlas.png" alt="...">
+		              <div class="caption">
+		                <h3>Thumbnail label</h3>
+		                <p>...</p>
+		              </div>
+		            </div>
+		            <div class="modal-footer">
+		              <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+		              <button type="button" class="btn btn-primary">Save changes</button>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+			<!-- Footer -->
 			<div id="footer">
 
 				<!-- Copyright -->
@@ -212,13 +237,15 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+			<script src="javascripts/vendor/jquery/dist/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="javascripts/vendor/bootstrap/dist/js/bootstrap.js"></script>
+			<script src="javascripts/vendor/underscore-amd/underscore.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
+			<script src="javascripts/main.js"></script>
 	</body>
 </html>
