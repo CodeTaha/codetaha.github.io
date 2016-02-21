@@ -1903,7 +1903,7 @@
 		color: #fff !important;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
-		background-color: #8ebebc;
+		background-color: #14706C;
 		border: 0;
 		cursor: pointer;
 		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
@@ -1940,10 +1940,11 @@
 	}
 
 		.item header {
-			background: #fff;
-			margin: 0;
-			padding: 1em 0 1em 0;
-			font-size: 0.8em;
+			    background: #D7D7D7;
+			    margin: 0;
+			    padding: 1em 0 1em 0;
+			    font-size: 0.8em;
+			    cursor: pointer;
 		}
 
 			.item header h3 {
@@ -2137,7 +2138,7 @@
 			}
 
 				#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
-					color: inherit;
+					/*color: inherit;*/
 				}
 
 				#main > section.dark strong {
@@ -2562,4 +2563,21 @@
     font-size: 18px;
     font-weight: 300;
     color:#EC5858;
+}
+
+
+#top .transbox h2{
+	color: #19F8EF;	
+	font-weight: bold;
+}
+#top .transbox{
+	margin: 30px;
+    background-color: #212528;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+#top .transbox h2 strong{	
+	font-weight: bold;
+	color:#F49696;
 }
