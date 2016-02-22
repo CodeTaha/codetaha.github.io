@@ -7,7 +7,14 @@ $(document).ready(function() {
       $("#portfolio article a").click(function(event){
       	event.preventDefault();
       })
-      console.log('This would be the main JS file.');
+      $('.cntl').cntl({
+            revealbefore: 300,
+            anim_class: 'cntl-animate',
+            onreveal: function(e){
+                console.log(e);
+            }
+        });
+
       portfolio_json = {
       	"ConstellationAtlas":{
       		"title": "Constellation Atlas",
@@ -16,6 +23,7 @@ $(document).ready(function() {
       			"images/img/ConstellationAtlas/slide_2.jpg",
       			"images/img/ConstellationAtlas/slide_3.jpg"
       			],
+      		"tags":["THREE.js", "OpenGL", "JavaScript", "CSS3D","Java","jQuery"],
       		"description": "The Constellation Atlas is a virtual simulation of the universe on the web using Three.js. We implemented two versions of the Constellation Atlas respectively to two approaches, one uses Points class with basic 2D texture for each star while the other employs a more advanced custom shaders for SphereGeometry objects.",
       		"git": "https://github.com/thuy616/ConstellationsAtlas",
       		"research": "https://goo.gl/GVbuob",
@@ -29,6 +37,7 @@ $(document).ready(function() {
       			"images/img/DotA2/box.png",
       			"images/img/DotA2/pro-live.png",
       			],
+      		"tags":["D3.js","Java", "REST", "Bootstrap","jQuery", "Plotly.js"],
       		"description": "DotA2 is one of the most played online digital games in the world. This project does a spatio-temporal analysis of 200 games from 4 skill tiers of DotA2. This includes trajectory motions at different times of the game and Win/Lose HeatMaps. This project also explores how the average Euclidean distance between team players affects the gameplay in different skill tiers.",
       		"git": "https://github.com/CodeTaha/Dota-Analysis",
       		"research": "https://www.academia.edu/22194561/DotA2_Spatio-Temporal_Game_Analysis",
@@ -41,6 +50,7 @@ $(document).ready(function() {
       			"images/img/AmRead/slide_2.png",
       			"images/img/AmRead/slide_3.png",
       			],
+      		"tags":["Java", "REST API", "WS-I", "underscore.js","Amazon Product Advertising API", "GoodReads API", "Bootstrap","jQuery"],
       		"description": "It is a Java based REST & WS-I application that can search for books available on Amazon depending on author, title, publication etc. Then a person can read the reviews for that book made available through GoodReads API. Finally there is a demo transaction gateway that simulates the procedure of a real transaction gateway using client_id, client_secret and threeway handshake.",
       		"git": "https://github.com/CodeTaha/AmReads",
       		"research": null,
@@ -52,6 +62,7 @@ $(document).ready(function() {
       			"images/img/DataScience/slide_1.png",
       			"images/img/DataScience/slide_2.png",
       			],
+      		"tags":["D3.js","Java", "Hadoop", "Map_Reduce"],
       		"description": " This project uses Hadoop Map-Reduce to determine the closeness between websites depending on the wordcount of the infrequent words shared between them. The visualization is a small subset of the final output which is a frce directed graph. Two nodes(websites) can then be selected to see the word frequency.",
       		"git": "https://github.com/deniskulicek/Data-Science-TUDelft",
       		"research": "https://www.academia.edu/22256975/Closeness_between_websites_depending_of_WordCount",
@@ -64,6 +75,7 @@ $(document).ready(function() {
       			"images/img/Pollican/slide_3.png",
       			"images/img/Pollican/slide_1.png",
       			],
+      		"tags":["D3.js","Java", "SpringMVC", "REST", "Bootstrap","jQuery"],
       		"description": "Pollican is a social hub for taking polls and surveys which is currently under Beta testing. The main objective is that users can create free polls and surveys.<br> These polls are then targeted to the relevant audience to solve them. This targeted audience is found by information retrieval of publicly available Twitter data and data retrieved from Facebook and LinkedIn.",
       		"git": "https://github.com/CodeTaha/Pollican",
       		"research": null,
@@ -74,6 +86,7 @@ $(document).ready(function() {
       		"img":[
       			"images/img/Civis/slide_1.jpg",
       			],
+      		"tags":["Node.js", "ExpressJS", "REST API", "Facebook API","jQuery"],
       		"description": "CIVIS project explores the potential of social networks and communities to significantly reduce energy use and carbon emission. It will achieve this goal by developing business models for the resulting energy value system and support it with the necessary ICT.",
       		"git": "https://github.com/CIVIS-project/YouPower",
       		"research": null,
@@ -102,6 +115,7 @@ var template= _.template('\
 				</a>\n\
               </div>\n\
               <div class="caption">\n\
+              	<div class="tags"></div></br>\n\
                 <p>{{description}}</p></br>\n\
                 <center><ul class="icons">\n\
                     <li title="Git"><a href="{{git}}" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>\n\
@@ -145,6 +159,10 @@ var fillModal = function(port){
 						      </div>');
     		
     	}
+    }
+    for(tag in data.tags){
+    	$(".tags").append('<i class="fa fa-tag"></i>'+data.tags[tag]+" ");
+    	
     }
     if(data.research==null){
     	$("#research-link").remove();
