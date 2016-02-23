@@ -1,0 +1,36 @@
+My Code is always
+   Indented;
+
+Having said that: ()->
+	I am skilled in
+		if(requirement == "frontend"){
+	  	var javaScript = {
+  			"frameworks": ["Backbone.js", "AngularJS", "Bootstrap"],
+  			"libraries": ["D3", "CoffeeScript", "jQuery", "Modernizr"],
+  			"testing": ["jasmine", "mocha"],
+  			"others": ["bower", "requireJS", "Grunt", "Gulp"]
+	  	};
+	  	return javaScript;
+		} else if(requirement == "backend") {
+			var result = {
+				"java": {
+					"frameworks": ["SpringMVC"],
+	  			"libraries": ["gson", "jasper"],
+	  			"testing": ["JUnit"],
+	  			"packageManager": ["mvn"]
+				},
+				"nodeJS": {
+					"frameworks": ["ExpressJS"],
+	  			"libraries": ["Mongoose"],
+	  			"testing": ["mocha and chai"],
+	  			"packageManager": ["npm"]
+				},
+				"python": {
+					"frameworks": ["Django"]
+				}
+			};
+		} else {
+		
+		}
+    
+
