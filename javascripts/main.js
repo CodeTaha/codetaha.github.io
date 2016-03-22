@@ -91,7 +91,21 @@ $(document).ready(function() {
       		"git": "https://github.com/CIVIS-project/YouPower",
       		"research": null,
       		"demo": "https://app.civisproject.eu/",
-      	}
+      	},
+        "AwesomeWSD":{
+          "title": "Awesome-wsd: JS Gamestore, and portal",
+          "img":[
+            "images/img/Awesome-wsd/slide_1.jpg",
+            "images/img/Awesome-wsd/slide_2.jpg",
+            "images/img/Awesome-wsd/slide_3.jpg",
+            "images/img/Awesome-wsd/slide_4.jpg",
+            ],
+          "tags":["Python", "Django", "REST API", "Django Rest Framework","jQuery"],
+          "description": "A mock gaming Portal where developers can upload JS games and players can play games after buying. Buying process simulates actual transaction gateway process.",
+          "git": "https://github.com/CIVIS-project/YouPower",
+          "research": null,
+          "demo": "http://awesome-wsd.herokuapp.com/",
+        }
       }
 });
 var template= _.template('\
