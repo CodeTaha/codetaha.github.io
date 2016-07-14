@@ -13,8 +13,10 @@ $(document).ready(function() {
             onreveal: function(e){
                 console.log(e);
             }
-        });
-
+      });
+      var resume_link='https://drive.google.com/file/d/0ByFlywQkLFB5M3dZcUxzSVE5Nm8/view?usp=sharing';
+      $(".icons").prepend('<li><a href="'+resume_link+'" title="resume" target="_blank" class="icon fa fa-file-text"><span class="label">Download CV</span></a></li>');
+      $("#resume_link").attr("href",resume_link);
       portfolio_json = {
       	"ConstellationAtlas":{
       		"title": "Constellation Atlas",
