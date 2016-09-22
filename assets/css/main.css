@@ -1594,8 +1594,7 @@
 		}
 
 	h2 {
-		font-size: 2em;
-		letter-spacing: -1px;
+		font-size: 1em;
 	}
 
 		h2.alt {
@@ -2560,7 +2559,7 @@
 ￼    text-transform: uppercase;
 }
 .person .person-content .person-subtitle {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     color:#EC5858;
 }

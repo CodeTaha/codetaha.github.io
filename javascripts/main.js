@@ -45,6 +45,17 @@ $(document).ready(function() {
       		"research": "https://www.academia.edu/22194561/DotA2_Spatio-Temporal_Game_Analysis",
       		"demo": "http://codetaha.github.io/Dota-Analysis/web/",
       	},
+        "ReactChat":{
+          "title": " ReactChat - A mock chat application developed using React and Flux",
+          "img":[
+            "images/img/ReactChat/slide_1.png",
+            ],
+          "tags":["React", "Flux", "Jest", "Gulp", "Bootstrap"],
+          "description": "It includes functionality such as Group and Personal chat as well as sending image attachments. It is build using Flux's unidirectional flow pattern. Unit tests implemented using Jest.",
+          "git": "https://github.com/CodeTaha/ReactChat",
+          "research": null,
+          "demo": "https://codetaha.github.io/ReactChat/dist/",
+        },
       	"AmRead":{
       		"title": "AmRead - A REST API & WS-I application exploring Amazon Product Advertising API",
       		"img":[
