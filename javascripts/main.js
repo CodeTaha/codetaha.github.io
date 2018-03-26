@@ -43,7 +43,7 @@ $(document).ready(function() {
       		"description": "DotA2 is one of the most played online digital games in the world. This project does a spatio-temporal analysis of 200 games from 4 skill tiers of DotA2. This includes trajectory motions at different times of the game and Win/Lose HeatMaps. This project also explores how the average Euclidean distance between team players affects the gameplay in different skill tiers.",
       		"git": "https://github.com/CodeTaha/Dota-Analysis",
       		"research": "https://www.academia.edu/22194561/DotA2_Spatio-Temporal_Game_Analysis",
-      		"demo": "http://codetaha.github.io/Dota-Analysis/web/",
+      		"demo": "http://taha-k.github.io/Dota-Analysis/web/",
       	},
         "ReactChat":{
           "title": " ReactChat - A mock chat application developed using React and Flux",
@@ -54,7 +54,7 @@ $(document).ready(function() {
           "description": "It includes functionality such as Group and Personal chat as well as sending image attachments. It is build using Flux's unidirectional flow pattern. Unit tests implemented using Jest.",
           "git": "https://github.com/CodeTaha/ReactChat",
           "research": null,
-          "demo": "https://codetaha.github.io/ReactChat/dist/",
+          "demo": "https://taha-k.github.io/ReactChat/dist/",
         },
       	"AmRead":{
       		"title": "AmRead - A REST API & WS-I application exploring Amazon Product Advertising API",
@@ -79,7 +79,7 @@ $(document).ready(function() {
       		"description": " This project uses Hadoop Map-Reduce to determine the closeness between websites depending on the wordcount of the infrequent words shared between them. The visualization is a small subset of the final output which is a frce directed graph. Two nodes(websites) can then be selected to see the word frequency.",
       		"git": "https://github.com/deniskulicek/Data-Science-TUDelft",
       		"research": "https://www.academia.edu/22256975/Closeness_between_websites_depending_of_WordCount",
-      		"demo": "http://codetaha.github.io/datasciViz/",
+      		"demo": "http://taha-k.github.io/datasciViz/",
       	},
       	"Pollican":{
       		"title": "Pollican: Social Hub for Polls and Surveys",
